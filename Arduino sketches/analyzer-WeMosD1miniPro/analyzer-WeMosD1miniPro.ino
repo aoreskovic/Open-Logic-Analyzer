@@ -99,7 +99,7 @@ void loop() {
   Serial.println(buff);
   //delay(4);
 
-  delay(4); //testing how the code wil handle slow refresh rate
+  delay(50); //testing how the code will handle slow refresh rate
   
   //}
   /*

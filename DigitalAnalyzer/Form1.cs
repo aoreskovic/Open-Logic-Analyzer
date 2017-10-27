@@ -19,6 +19,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 // TODO show time between readings
 // TODO send serial data as BIN not string, or add something for determinism
 // TODO self calibrate code for e.g. fixed 1 khz sample rate
+// TODO use containers for layout
 // TODO make resizable
 // TODO group into vectors
 
