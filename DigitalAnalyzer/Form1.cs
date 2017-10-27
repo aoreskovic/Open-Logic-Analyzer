@@ -212,9 +212,6 @@ namespace DigitalAnalyzer {
         }
 
         private void chart1_CursorPositionChanged(object sender, CursorEventArgs e) {
-            // FIX This throws exception if selected during acquisition
-            ctrlList.SelectedIndex = (int)e.NewPosition;
-            dataList.SelectedIndex = (int)e.NewPosition;
         }
 
         private void load_Click(object sender, EventArgs e) {
@@ -236,9 +233,6 @@ namespace DigitalAnalyzer {
         }
 
         private void button5_Click(object sender, EventArgs e) {
-            ctrlList.Items.Clear();
-            dataList.Items.Clear();
-
             string bin;
             int total = chart1.Series.Count;
             int y = 0;
@@ -250,8 +244,6 @@ namespace DigitalAnalyzer {
                     bin += chart1.Series[s].Points.Where(point => point.XValue == x).First().YValues[0] == y ? 1 : 0;
                 }
 
-                ctrlList.Items.Add(bin.Substring(0, 8));
-                dataList.Items.Add(bin.Substring(8, 8));
             }
         }
 

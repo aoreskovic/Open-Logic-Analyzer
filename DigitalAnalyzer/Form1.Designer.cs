@@ -41,13 +41,9 @@
             System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button4 = new System.Windows.Forms.Button();
-            this.ctrlList = new System.Windows.Forms.ListBox();
-            this.dataList = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.resetChk = new System.Windows.Forms.CheckBox();
             this.load = new System.Windows.Forms.Button();
@@ -74,16 +70,6 @@
             this.DelayTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(93, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Save data";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -132,7 +118,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(174, 34);
+            this.chart1.Location = new System.Drawing.Point(12, 34);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -230,36 +216,11 @@
             this.chart1.Series.Add(series14);
             this.chart1.Series.Add(series15);
             this.chart1.Series.Add(series16);
-            this.chart1.Size = new System.Drawing.Size(1011, 420);
+            this.chart1.Size = new System.Drawing.Size(1183, 420);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             this.chart1.CursorPositionChanged += new System.EventHandler<System.Windows.Forms.DataVisualization.Charting.CursorEventArgs>(this.chart1_CursorPositionChanged);
             this.chart1.MouseEnter += new System.EventHandler(this.chart1_MouseEnter);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(12, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Save control";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // ctrlList
-            // 
-            this.ctrlList.FormattingEnabled = true;
-            this.ctrlList.Location = new System.Drawing.Point(12, 34);
-            this.ctrlList.Name = "ctrlList";
-            this.ctrlList.Size = new System.Drawing.Size(75, 420);
-            this.ctrlList.TabIndex = 9;
-            // 
-            // dataList
-            // 
-            this.dataList.FormattingEnabled = true;
-            this.dataList.Location = new System.Drawing.Point(93, 34);
-            this.dataList.Name = "dataList";
-            this.dataList.Size = new System.Drawing.Size(75, 420);
-            this.dataList.TabIndex = 10;
             // 
             // button3
             // 
@@ -533,7 +494,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 462);
+            this.ClientSize = new System.Drawing.Size(1203, 462);
             this.Controls.Add(this.DelayTextBox);
             this.Controls.Add(this.SerialSpeedComboBox);
             this.Controls.Add(this.SerialPortComboBox);
@@ -558,13 +519,9 @@
             this.Controls.Add(this.load);
             this.Controls.Add(this.resetChk);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.dataList);
-            this.Controls.Add(this.ctrlList);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -577,13 +534,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListBox ctrlList;
-        private System.Windows.Forms.ListBox dataList;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.CheckBox resetChk;
         private System.Windows.Forms.Button load;
